@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/surajkumarsinha/kafka-go-poc/http/routing/producer"
 	"github.com/surajkumarsinha/kafka-go-poc/infrastructure"
-	"github.com/surajkumarsinha/kafka-go-poc/routing/producer"
 	generalEndpoint "github.com/surajkumarsinha/kafka-go-poc/types/interfaces/endpoints"
 )
 
