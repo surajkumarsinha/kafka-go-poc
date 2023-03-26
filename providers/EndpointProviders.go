@@ -11,7 +11,7 @@ import (
 func EndpointProviders() {
 	infra.Register(
 		func(params ...any) producerEndpointInterfaces.IProducerEndpoint {
-			return producerEndpoint.ProducerEndpoint{}
+			return &producerEndpoint.ProducerEndpoint{}
 		},
 	)
 	infra.Register(
