@@ -14,7 +14,7 @@ import (
 func main() {
 	infrastructure.KernelBuilder().Build(config.App())
 	routingSystem := infrastructure.Resolve[interfaces.IChiRouter]()
-	http.ListenAndServe(getAddress(), routingSystem.InitRouter(routing.Routes))
+	http.ListenAndServe(getAddress(), routingSystem.InitRouter(routing.InitRoutes().Routes))
 }
 
 func getAddress() string {
